@@ -15,17 +15,7 @@ from scipy.signal import butter, lfilter
 ######################
 def dp(dist_mat):
     """
-    Find minimum-cost path through matrix `dist_mat` using dynamic programming.
-
-    The cost of a path is defined as the sum of the matrix entries on that
-    path. See the following for details of the algorithm:
-
-    - http://en.wikipedia.org/wiki/Dynamic_time_warping
-    - https://www.ee.columbia.edu/~dpwe/resources/matlab/dtw/dp.m
-
-    The notation in the first reference was followed, while Dan Ellis's code
-    (second reference) was used to check for correctness. Returns a list of
-    path indices and the cost matrix.
+    Function sourced from https://github.com/kamperh/lecture_dtw_notebook by Herman Kamper
     """
 
     N, M = dist_mat.shape
